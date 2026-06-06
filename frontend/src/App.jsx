@@ -16,7 +16,7 @@ function App() {
         title: newTodo,
         completed: false
       })
-      setTodos([...todos, response.data])
+      setTodos([...todos, response.data.data])
       setNewTodo('')
     } catch (error) {
       console.error('Error adding todo:', error)
@@ -29,7 +29,7 @@ function App() {
         ...todo,
         completed: !todo.completed
       })
-      setTodos(todos.map((t) => (t.id === todo.id ? response.data : t)))
+      setTodos(todos.map((t) => (t.id === todo.id ? response.data.data : t)))
     } catch (error) {
       console.error('Error toggling todo:', error)
     }
@@ -48,7 +48,7 @@ function App() {
     const fetchTodos = async () => {
       try {
         const response = await axios.get(API_URL)
-        setTodos(response.data)
+        setTodos(response.data.data)
       } catch (error) {
         console.error('Error fetching todos:', error)
       }
