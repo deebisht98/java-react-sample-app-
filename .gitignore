@@ -1,0 +1,29 @@
+# Environment variables (contains passwords!)
+.env
+.env.local
+.env.*.local
+
+# Docker volumes and data (optional - uncomment if you don't want to commit)
+# postgres_data/
+# pgadmin_data/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
