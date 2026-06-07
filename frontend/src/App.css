@@ -1,23 +1,17 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
 .todo-container {
   background-color: #242424;
   padding: 2rem;
-  border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 500px;
+  height: 100vh;
   margin: 0 auto;
 }
 
 h1 {
   color: #646cff;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem;
+  width: 100%;
+  text-align: center;
 }
 
 .todo-form {
@@ -71,6 +65,7 @@ h1 {
 .todo-list li span {
   cursor: pointer;
   flex: 1;
+  color: white;
 }
 
 .todo-list li.completed span {
@@ -90,4 +85,21 @@ h1 {
 
 .delete-btn:hover {
   background-color: #cc0000;
+}
+.banner {
+  position:absolute;
+  bottom: 20px;
+  right: 20px;
+  padding:20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.error {
+  background-color: #ff4444;
+  margin-bottom: 1rem;
+}
+.success {
+  background-color: #44ff44;
+  margin-bottom: 1rem;
 }
